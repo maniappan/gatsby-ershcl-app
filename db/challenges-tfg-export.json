@@ -38,12 +38,14 @@
       "githubURL" : "https://github.com/ERS-HCL/gatsby-demo-app",
       "id" : 11,
       "impact" : "Faster access to the ers-hcl site",
+      "implementor" : "Tarun Sukhu",
       "name" : "Add PWA and Offline support to Gatsby based ers-hcl website.",
+      "owner" : "Tarun Sukhu",
       "priority" : "High",
-      "recommendation" : "Future Relevance",
+      "recommendation" : "Showcase Item",
       "status" : "Done",
       "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-11-16T05:23:29Z",
+      "updatedOn" : "2018-11-16T08:25:03Z",
       "votes" : 1
     },
     "1" : {
@@ -52,9 +54,15 @@
       "domain" : "Web UI",
       "githubURL" : "https://github.com/ERS-HCL/gatsby-demo-app",
       "id" : "4dbbe27e-ce1d-4d7c-beea-06ba4e582de7",
+      "impact" : "",
+      "implementor" : "Tarun Sukhu",
       "name" : "Add support for Excel files based auto generated pages in Gatsby (HCL ERS Github static generated site)",
+      "owner" : "Tarun Sukhu",
       "priority" : "Medium",
+      "recommendation" : "Showcase Item",
       "status" : "Done",
+      "updatedBy" : "tksukhu@gmail.com",
+      "updatedOn" : "2018-11-16T08:26:40Z",
       "votes" : 1
     },
     "2" : {
@@ -63,9 +71,15 @@
       "domain" : "Web UI",
       "githubURL" : "https://github.com/ERS-HCL/gatsby-demo-app",
       "id" : "b981e13f-5b13-4581-9adb-f7d7d8ea132f",
+      "impact" : "",
+      "implementor" : "",
       "name" : "Add support for github top ten projects based on star rating",
+      "owner" : "",
       "priority" : "Medium",
+      "recommendation" : "Showcase Item",
       "status" : "Done",
+      "updatedBy" : "tksukhu@gmail.com",
+      "updatedOn" : "2018-11-16T09:24:49Z",
       "votes" : 1
     },
     "3" : {
@@ -80,7 +94,7 @@
       "recommendation" : "Future Relevance",
       "status" : "Done",
       "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-11-16T05:14:15Z",
+      "updatedOn" : "2018-11-16T06:22:04Z",
       "votes" : 1
     },
     "4" : {
@@ -949,7 +963,9 @@
       "id" : "704a2287-e4f5-4423-8ddd-3519e7df4d38",
       "name" : "Azure Blob Storage access for SPA Apps",
       "priority" : "Medium",
-      "status" : "In Progress",
+      "status" : "Backlog Item",
+      "updatedBy" : "tksukhu@gmail.com",
+      "updatedOn" : "2018-11-16T08:27:51Z",
       "votes" : 1
     },
     "-LEISnFYbp0662HcYW7k" : {
@@ -986,11 +1002,14 @@
       "githubURL" : "https://github.com/ERS-HCL/JSD-SREWorkflow",
       "id" : "4f1efa6f-259a-4057-a7ff-4aeb1c52057e",
       "impact" : "preconfigured reference workflow for auto-ticketing and auto-remediation based on monitoring, useful for assisted troubleshooting and site reliability",
+      "implementor" : "",
       "name" : "Create an auto-remediation workflow in JIRA Service Desk(JSD)",
+      "owner" : "",
       "priority" : "High",
+      "recommendation" : "Showcase Item",
       "status" : "Done",
-      "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-09-30T14:46:18Z",
+      "updatedBy" : "lavanya-s@hcl.com",
+      "updatedOn" : "2018-11-21T09:48:16Z",
       "votes" : 1
     },
     "-LEsVsBLMqC_fYYNvhN2" : {
@@ -999,11 +1018,15 @@
       "domain" : "DevOps",
       "githubURL" : "",
       "id" : "52de1ae0-e785-41ae-b24e-d62e3233ff82",
+      "impact" : "reference environment to showcase about running DevOps toolchain in kubernetes",
+      "implementor" : "",
       "name" : "Create DevOps tools as Helm packages to install as helm charts in Kubernetes environments",
+      "owner" : "",
       "priority" : "High",
+      "recommendation" : "Needs to be worked on",
       "status" : "Backlog Item",
-      "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-09-30T14:23:58Z",
+      "updatedBy" : "lavanya-s@hcl.com",
+      "updatedOn" : "2018-11-21T09:51:53Z",
       "votes" : 0
     },
     "-LEyGDHdPQBQ7cH46TSf" : {
@@ -1089,11 +1112,14 @@
       "githubURL" : "https://www.apollographql.com/docs/apollo-server/v2/,https://github.com/ERS-HCL/nxplorerjs-microservice-starter ",
       "id" : "821f0385-5e24-4b36-a5a2-1f85679eb666",
       "impact" : "Its critical that we upgrade and move towards v2 as most of the GraphQL Ecosystem around Node JS and Apollo (both backend and frontend) are likely to move in the coming months. Otherwise the existing solutions will be obsolete soon.",
+      "implementor" : "Tarun Sukhu",
       "name" : "Apollo Server 2.0 Upgrade for Next Generation NodeJS GraphQL Servers ",
+      "owner" : "Tarun Sukhu",
       "priority" : "High",
+      "recommendation" : "Showcase Item",
       "status" : "Done",
       "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-11-16T04:53:12Z",
+      "updatedOn" : "2018-11-16T08:27:12Z",
       "votes" : 1
     },
     "-LG_0AWfNM2TPEmIV1K7" : {
@@ -1310,6 +1336,22 @@
       "status" : "Approval Pending",
       "updatedBy" : "tksukhu@gmail.com",
       "updatedOn" : "2018-11-16T05:44:16Z"
+    },
+    "-LRpfkObr7I4kby4uf0t" : {
+      "contributor" : "lavanya-s@hcl.com",
+      "description" : "Accelerated Monitoring solution to monitor full stack which provides resource level, work level, error metrics on Java stack components, middle ware services, network, containers, infrastructure, application, kubernetes along with built-in automated alerts, preconfigured dashboards and auto-ticketing integration. ",
+      "domain" : "DevOps",
+      "githubURL" : "https://github.com/ERS-HCL/101-TIG",
+      "id" : "2c7842d5-0ba1-48c1-b54b-7007e68703cf",
+      "impact" : "This Accelerator enables to setup the monitoring solution needed for full stack monitoring, with preconfigured dashboards for various metrics on resources, error metrics and provides built-in alerts for cpu, memory, disk, containers related metrics which can be used for hooked easily to incident management system for auto-ticketing and auto-remediation , enabling assisted troubleshooting and faster triaging and incident resolution. ",
+      "implementor" : "",
+      "name" : "Monitoring solution to monitor full stack with built-in alerts and preconfigured dashboards for monitoring Java stack, containers, infrastructure, application",
+      "owner" : "",
+      "priority" : "High",
+      "recommendation" : "Showcase Item",
+      "status" : "Done",
+      "updatedBy" : "lavanya-s@hcl.com",
+      "updatedOn" : "2018-11-21T10:02:27Z"
     }
   },
   "vote" : {
