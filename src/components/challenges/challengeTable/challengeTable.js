@@ -1,4 +1,4 @@
-import Chip from '@material-ui/core/Chip'
+import axios from 'axios'
 import Paper from '@material-ui/core/Paper'
 import Popover from '@material-ui/core/Popover'
 import Snackbar from '@material-ui/core/Snackbar'
@@ -451,6 +451,17 @@ class ChallengeTable extends React.Component {
     this.setState({ filter: !filter })
   }
 
+  // Call serverless function for sending on email notifications
+  postEmailNotification = async (currentItem) => {
+   // console.log('Called postEmailNotification');
+    try {
+      await axios.post(process.env.FIREBASE_EMAIL_FUNCTION_URL, currentItem)
+    } catch (error) {
+      console.error('There was an error while executing the post call', error);
+    }
+
+  }
+
   handleFormSubmit = (event, formData) => {
     const { selected, data } = this.state
     if (selected[0] === undefined) return
@@ -486,7 +497,7 @@ class ChallengeTable extends React.Component {
             isSaving: false
           })
         })
-        .then(() =>
+        .then(() => {
           this.setState({
             showSnackbar: true,
             snackBarMessage: 'Data saved !!',
@@ -494,6 +505,9 @@ class ChallengeTable extends React.Component {
             editing: false,
             selected: []
           })
+          // console.log(currentItem)
+          this.postEmailNotification(currentItem);
+        }
         )
     }
   }
@@ -584,12 +598,15 @@ class ChallengeTable extends React.Component {
             isSaving: false
           })
         })
-        .then(() =>
+        .then(() => {
           this.setState({
             showSnackbar: true,
             snackBarMessage: 'Data saved !!',
             isSaving: false
           })
+         // console.log(currentItem);
+          this.postEmailNotification(currentItem);
+        }
         )
     }
   }
@@ -782,7 +799,7 @@ class ChallengeTable extends React.Component {
 
   emailShortForm = (email) => {
     if (email === undefined)
-    return
+      return
     const index = email.indexOf('@') > -1 ? email.indexOf('@') : 5
     return email.substr(0, index);
   }
@@ -1051,11 +1068,11 @@ class ChallengeTable extends React.Component {
                           /> */}
                           <Badge text={n.domain} className={classes.svg} />
 
-                         {/*  <Contributor email={n.contributor} subject={n.name} className={classes.svg} /> */}
-                         <div className={classes.spacingTop}>
-                          {n.contributor && <div><b>By: </b>{this.emailShortForm(n.contributor)}</div>}
-                          {n.owner && <div><b>Owner: </b>{n.owner}</div>}
-                          {n.implementor && <div><b>Implementor(s): </b>{n.implementor}</div>}
+                          {/*  <Contributor email={n.contributor} subject={n.name} className={classes.svg} /> */}
+                          <div className={classes.spacingTop}>
+                            {n.contributor && <div><b>By: </b>{this.emailShortForm(n.contributor)}</div>}
+                            {n.owner && <div><b>Owner: </b>{n.owner}</div>}
+                            {n.implementor && <div><b>Implementor(s): </b>{n.implementor}</div>}
                           </div>
                           {isEditable &&
                             isSelected && (
@@ -1068,7 +1085,7 @@ class ChallengeTable extends React.Component {
                             )}
                         </TableCell>
                         <TableCell padding="dense">
-                        {n.recommendation && (<div className={classes.spacingBottom}><Badge
+                          {n.recommendation && (<div className={classes.spacingBottom}><Badge
                             text={n.recommendation.toUpperCase()}
                             className={classes.svg} /></div>)}
                           {n.name.length > 100
