@@ -455,7 +455,7 @@ class ChallengeTable extends React.Component {
   postEmailNotification = async (currentItem) => {
    // console.log('Called postEmailNotification');
     try {
-      await axios.post(process.env.FIREBASE_EMAIL_FUNCTION_URL, currentItem)
+      await axios.post('https://us-central1-challenges-tfg.cloudfunctions.net/challengeUpdate', currentItem)
     } catch (error) {
       console.error('There was an error while executing the post call', error);
     }
