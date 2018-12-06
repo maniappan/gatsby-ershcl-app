@@ -56,7 +56,7 @@
     "gh-pages": "^2.0.1",
     "null-loader": "^0.1.1"
   },
-  "version": "2.2.1",
+  "version": "2.2.2",
   "main": "n/a",
   "repository": {
     "type": "git",
