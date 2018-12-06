@@ -454,6 +454,8 @@ class ChallengeTable extends React.Component {
   // Call serverless function for sending on email notifications
   postEmailNotification = async (currentItem) => {
    // console.log('Called postEmailNotification');
+   if( currentItem === undefined) return;
+   
     try {
       await axios.post('https://us-central1-challenges-tfg.cloudfunctions.net/challengeUpdate', currentItem)
     } catch (error) {
