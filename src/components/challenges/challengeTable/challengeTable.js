@@ -453,13 +453,14 @@ class ChallengeTable extends React.Component {
 
   // Call serverless function for sending on email notifications
   postEmailNotification = async (currentItem) => {
-   // console.log('Called postEmailNotification');
-   if( currentItem === undefined) return;
-   
-    try {
-      await axios.post('https://us-central1-challenges-tfg.cloudfunctions.net/challengeUpdate', currentItem)
-    } catch (error) {
-      console.error('There was an error while executing the post call', error);
+    // console.log('Called postEmailNotification');
+    if (currentItem && currentItem.domain && currentItem.updatedBy) {
+
+      try {
+        await axios.post('https://us-central1-challenges-tfg.cloudfunctions.net/challengeUpdate', currentItem)
+      } catch (error) {
+        console.error('There was an error while executing the post call', error);
+      }
     }
 
   }
@@ -500,6 +501,7 @@ class ChallengeTable extends React.Component {
           })
         })
         .then(() => {
+          this.postEmailNotification(currentItem);
           this.setState({
             showSnackbar: true,
             snackBarMessage: 'Data saved !!',
@@ -508,7 +510,7 @@ class ChallengeTable extends React.Component {
             selected: []
           })
           // console.log(currentItem)
-          this.postEmailNotification(currentItem);
+         
         }
         )
     }
@@ -601,13 +603,14 @@ class ChallengeTable extends React.Component {
           })
         })
         .then(() => {
+          this.postEmailNotification(currentItem);
           this.setState({
             showSnackbar: true,
             snackBarMessage: 'Data saved !!',
             isSaving: false
           })
-         // console.log(currentItem);
-          this.postEmailNotification(currentItem);
+          // console.log(currentItem);
+          
         }
         )
     }
