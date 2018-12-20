@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
-import Button from '@material-ui/core/Button'
-import AddIcon from '@material-ui/icons/Add'
+import Fab from '@material-ui/core/Fab'
 import EditIcon from '@material-ui/icons/Edit'
 import DeleteIcon from '@material-ui/icons/Delete'
 
@@ -24,25 +23,23 @@ function FloatingActionButtons(props) {
   const { classes, onClickEdit, onClickDelete } = props
   return (
     <div className={classes.root}>
-      <Button
-        variant="fab"
+      <Fab 
+        size="small"
         color="secondary"
-        mini
         aria-label="edit"
         className={classes.button}
         onClick={onClickEdit}
       >
         <EditIcon />
-      </Button>
-      <Button
-        variant="fab"
-        mini
+      </Fab>
+      <Fab 
+        size="small"
         aria-label="delete"
         className={classes.button}
         onClick={onClickDelete}
       >
         <DeleteIcon />
-      </Button>
+      </Fab>
     </div>
   )
 }

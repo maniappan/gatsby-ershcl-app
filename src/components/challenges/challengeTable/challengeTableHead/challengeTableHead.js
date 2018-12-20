@@ -37,7 +37,7 @@ class ChallengeTableHead extends React.Component {
               column.visible &&
               <TableCell
                 key={column.id}
-                numeric={column.numeric}
+                align="right"
                 padding={column.disablePadding ? 'none' : 'dense'}
                 sortDirection={orderBy === column.id ? order : false}
               >

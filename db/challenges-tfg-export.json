@@ -146,11 +146,15 @@
       "domain" : "Web UI",
       "githubURL" : "",
       "id" : "bf47ff7d-3238-4fec-ae09-63426287517a",
+      "impact" : "",
+      "implementor" : "",
       "name" : "BitSrc based component library",
+      "owner" : "",
       "priority" : "Medium",
-      "status" : "In Progress",
+      "recommendation" : "None",
+      "status" : "Backlog Item",
       "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-09-30T14:22:31Z",
+      "updatedOn" : "2018-12-14T05:49:24Z",
       "votes" : 1
     },
     "8" : {
@@ -179,11 +183,15 @@
       "domain" : "Web UI",
       "githubURL" : "",
       "id" : 9,
+      "impact" : "",
+      "implementor" : "",
       "name" : "CSS-in-JS Emotion / React Sample",
+      "owner" : "",
       "priority" : "Low",
+      "recommendation" : "None",
       "status" : "Backlog Item",
       "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-07-07T03:19:20Z",
+      "updatedOn" : "2018-12-07T04:06:43Z",
       "votes" : 1
     },
     "12" : {
@@ -1057,10 +1065,10 @@
       "name" : "Incident Detection",
       "owner" : "",
       "priority" : "High",
-      "recommendation" : "Showcase Item",
+      "recommendation" : "Needs to be worked on",
       "status" : "Approval Pending",
-      "updatedBy" : "vino4all@gmail.com",
-      "updatedOn" : "2018-12-04T10:45:16Z",
+      "updatedBy" : "tksukhu@gmail.com",
+      "updatedOn" : "2018-12-12T10:20:32Z",
       "votes" : 0
     },
     "-LEyGfblEj4h43ZG0UuM" : {
@@ -1246,12 +1254,16 @@
       "domain" : "Web UI",
       "githubURL" : "https://medium.com/yld-engineering-blog/evaluating-cypress-and-testcafe-for-end-to-end-testing-fcd0303d2103",
       "id" : "4f77cbe3-34f2-4504-b5f5-ee9fb80f2e66",
-      "impact" : "While we are spending a lot of focus of the newer web frameworks there is a need to also look at the e2e frameworks. While the percentage of tests we write are the smallest as compared to integration and unit tests, we need to make sure these are very efficient in running, developing and maintaining. This is where non Selenium options have cropped up and we need to have these in our technology porfolio.",
+      "impact" : "While we are spending a lot of focus of the newer web frameworks there is a need to also look at the e2e frameworks. While the percentage of tests we write are the smallest as compared to integration and unit tests, we need to make sure these are very efficient in running, developing and maintaining. This is where non Selenium options have cropped up and we need to have these in our technology porfolio",
+      "implementor" : "",
       "name" : "Cypress.io vs TestCafe",
+      "owner" : "",
       "priority" : "High",
+      "recommendation" : "None",
       "status" : "Backlog Item",
       "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-07-20T11:26:42Z"
+      "updatedOn" : "2018-12-07T04:23:23Z",
+      "votes" : 0
     },
     "-LIoJ8U7ZecIo9P56NDD" : {
       "contributor" : "pjoshi@hcl.com",
@@ -1396,11 +1408,27 @@
       "updatedBy" : "tksukhu@gmail.com",
       "updatedOn" : "2018-11-26T10:28:07Z",
       "votes" : 0
+    },
+    "-LU4VlIjXTrI8PfyANkT" : {
+      "contributor" : "amitgoyal14@gmail.com",
+      "description" : "Tool will analysis cost of Cloud Infrastructure used in project and provide centralized projected total cost of all cloud infrastructure irrespective of cloud provider  per day/per month/per year .\n It will suggest recommendations for cost saving and send mail to project stakeholders. Project team can get exact view of total cloud expenses by graph/chart and can take action on suggested recommendations .\nIt can save lot of cloud infrastructure cost for organization .\n\n",
+      "domain" : "Cloud",
+      "githubURL" : "",
+      "id" : "98b4ad40-c3f4-4ca3-8e96-eebf135f122d",
+      "impact" : "It will save lot of cloud infra cost by providing exact cost analysis of cloud Infrastructure in project",
+      "implementor" : "amitkumarg@hcl.com",
+      "name" : "Unified Cost Analysis of Cloud Infrastructure(AWS,Azure,GCP) ",
+      "owner" : "amitkumarg@hcl.com",
+      "priority" : "None",
+      "recommendation" : "Future Relevance",
+      "status" : "Approval Pending",
+      "updatedBy" : "amitgoyal14@gmail.com",
+      "updatedOn" : "2018-12-19T08:32:32Z"
     }
   },
   "subscription" : [ {
-    "subscribed" : true,
-    "uid" : "tsukhu@gmail.com"
+    "email" : "tksukhu@gmail.com",
+    "subscribed" : true
   } ],
   "vote" : {
     "0" : {

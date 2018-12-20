@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 import Tooltip from '@material-ui/core/Tooltip'
 import Paper from '@material-ui/core/Paper'
 import Button from '@material-ui/core/Button'
+import Fab from '@material-ui/core/Fab'
 import SearchIcon from '@material-ui/icons/Search'
 import ClearIcon from '@material-ui/icons/Clear'
 import PageHeader from '../../pageHeader/pageHeader'
@@ -300,24 +301,22 @@ class SearchBox extends React.Component {
               {updatedBeforeSearch}
               {latestSearch}
               <div className={classes.buttonWrapper}>
-                <Button
-                  variant="fab"
+                <Fab 
                   color="primary"
                   aria-label="search"
                   className={classes.button}
                   onClick={() => onSearch(this.state)}
                 >
                   <SearchIcon />
-                </Button>
-                <Button
-                  variant="fab"
+                </Fab>
+                <Fab
                   color="primary"
                   aria-label="clear search"
                   className={classes.button}
                   onClick={e => this.handleClearSearch(e)}
                 >
                   <ClearIcon />
-                </Button>
+                </Fab>
               </div>
             </form>
           </div>
