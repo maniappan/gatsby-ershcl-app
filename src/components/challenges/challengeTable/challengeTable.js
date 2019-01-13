@@ -1080,7 +1080,7 @@ class ChallengeTable extends React.Component {
                           {/*  <Contributor email={n.contributor} subject={n.name} className={classes.svg} /> */}
                           <div className={classes.spacingTop}>
                             {n.contributor && <div><b>By: </b>{this.emailShortForm(n.contributor)}</div>}
-                            {n.owner && <div><b>Owner: </b>{n.owner}</div>}
+                            {n.owner && <div><b>SME: </b>{n.owner}</div>}
                             {n.implementor && <div><b>Implementor(s): </b>{n.implementor}</div>}
                           </div>
                           {isEditable &&

@@ -72,14 +72,14 @@ const getColumnData = isAdmin => {
       helperText: 'contributor email'
     },
     {
-      id: 'owner',
+      id: 'owner', // owner is SME
       numeric: false,
       disablePadding: false,
-      label: 'Owner',
+      label: 'SME',
       type: 'text',
       visible: false,
       editable: true,
-      helperText: 'Challenge Owner'
+      helperText: 'Challenge SME'
     },
     {
       id: 'implementor',

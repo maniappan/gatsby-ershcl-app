@@ -2,6 +2,7 @@ import blueGrey from '@material-ui/core/colors/blueGrey'
 import green from '@material-ui/core/colors/green'
 import cyan from '@material-ui/core/colors/cyan'
 import teal from '@material-ui/core/colors/teal'
+import grey from '@material-ui/core/colors/grey'
 import deepOrange from '@material-ui/core/colors/deepOrange'
 import { lighten } from '@material-ui/core/styles/colorManipulator'
 
@@ -190,6 +191,19 @@ const challengeTableStyles = theme => ({
 })
 
 const challengeHeaderStyles = theme => ({
+
+  rootTable: {
+    width: '100%',
+    marginTop: theme.spacing.unit * 3,
+    overflowX: 'auto',
+  },
+  table: {
+    minWidth: 700,
+  },
+  heading: {
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: theme.typography.fontWeightRegular,
+  },
   paper: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -199,7 +213,11 @@ const challengeHeaderStyles = theme => ({
     transitionEnabled: true,
     rounded: true,
     borderRadius: 5,
-    shadowRadius: 5
+    shadowRadius: 5,
+    alignSelf: 'center',
+    alignItems: 'center',
+    alignContent: 'center',
+    justifyContent: 'center',
   },
   card: {
     margin: 5,
@@ -207,6 +225,11 @@ const challengeHeaderStyles = theme => ({
     rounded: true,
     borderRadius: 5,
     shadowRadius: 5,
+    backgroundColor: grey[50],
+    alignSelf: 'center',
+    alignItems: 'center',
+    alignContent: 'center',
+  justifyContent: 'center',
   },
   media: {
     height: 0,

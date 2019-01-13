@@ -99,12 +99,12 @@ class Navigation extends Component {
                 <DeveloperBoard />
               </IconButton>
             </Tooltip>
-            <Tooltip title="Challenges">
+            <Tooltip title="Ideas App">
               <IconButton
                 color="inherit"
                 component={Link}
                 to="/challenges/"
-                aria-label="ERS-HCL challenges"
+                aria-label="ERS-HCL Ideas"
               >
                 <RateReview />
               </IconButton>
@@ -198,12 +198,12 @@ class Navigation extends Component {
                 component={Link}
                 to="/challenges/"
                 onClick={this.handleClose}
-                aria-label="All github challenges"
+                aria-label="ERS-HCL Ideas"
               >
                 <ListItemIcon>
                   <RateReview />
                 </ListItemIcon>
-                <ListItemText primary="Challenges" />
+                <ListItemText primary="Ideas App" />
               </ListItem>
               <ListItem
                 button
