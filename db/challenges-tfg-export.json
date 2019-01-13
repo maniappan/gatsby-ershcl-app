@@ -123,11 +123,14 @@
       "githubURL" : "https://github.com/ERS-HCL/mobx-react-ts-app,\nhttps://github.com/ERS-HCL/react-git-explorer",
       "id" : "7900f04b-75fd-4401-bd77-ee9c4b89e90f",
       "impact" : "The decision of choosing Typescript over Flow / Babel has implications of cleaner , potentially less compile time errors vs productivity. On a case to case basis decide on what is more applicable.",
+      "implementor" : "",
       "name" : "Babel ES6/7 vs Typescript for React Application",
+      "owner" : "Tarun Sukhu",
       "priority" : "High",
+      "recommendation" : "Showcase Item",
       "status" : "Backlog Item",
       "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-09-30T14:22:20Z",
+      "updatedOn" : "2019-01-13T10:49:55Z",
       "votes" : 1
     },
     "6" : {
@@ -188,10 +191,10 @@
       "name" : "CSS-in-JS Emotion / React Sample",
       "owner" : "",
       "priority" : "Low",
-      "recommendation" : "None",
+      "recommendation" : "Future Relevance",
       "status" : "Backlog Item",
       "updatedBy" : "tksukhu@gmail.com",
-      "updatedOn" : "2018-12-07T04:06:43Z",
+      "updatedOn" : "2018-12-20T11:40:04Z",
       "votes" : 1
     },
     "12" : {
