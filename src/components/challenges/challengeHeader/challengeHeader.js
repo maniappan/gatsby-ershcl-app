@@ -49,20 +49,20 @@ class ChallengeHeader extends React.Component {
           <br/>
           <ExpansionPanel >
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography className={classes.heading}>ERS Open Source Panel</Typography>
+              <Typography className={classes.heading} variant="h4">ERS Open Source Panel</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <span>
-                <Typography>
+              <span className={classes.expansion}>
+                <Typography variant="body2">
                   Following SMEs are part of the ERS Open Source Panel . <br/>They are core to driving this initiative and have following responsibilities
               </Typography>
-                <Typography>
+                <Typography variant="body2" component="ul">
                   <ul>
-                    <li>Review TECHNOLOGY Open source submissions for quality when required. SME can take help from others on this</li>
-                    <li>Identify one quality Challenge/Idea per quarter to be shared on Github</li>
-                    <li>Implement some of the Challenges/ Ideas</li>
-                    <li>Identify ways to build TECHNOLOGY competency by curating list of online courses, assignments</li>
-                    <li>Recommend the top quality TECHNOLOGY forums where our team should contribute</li>
+                    <li><Typography>Review TECHNOLOGY Open source submissions for quality when required. SME can take help from others on this</Typography></li>
+                    <li><Typography>Identify one quality Challenge/Idea per quarter to be shared on Github</Typography></li>
+                    <li><Typography>Implement some of the Challenges/ Ideas</Typography></li>
+                    <li><Typography>Identify ways to build TECHNOLOGY competency by curating list of online courses, assignments</Typography></li>
+                    <li><Typography>Recommend the top quality TECHNOLOGY forums where our team should contribute</Typography></li>
                   </ul>
 
                 </Typography>

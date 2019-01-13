@@ -191,7 +191,12 @@ const challengeTableStyles = theme => ({
 })
 
 const challengeHeaderStyles = theme => ({
-
+  expansion: {
+    display: 'flex',
+    flex: '1 1 auto',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
   rootTable: {
     width: '100%',
     marginTop: theme.spacing.unit * 3,
