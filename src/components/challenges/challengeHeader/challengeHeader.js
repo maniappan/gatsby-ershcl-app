@@ -15,7 +15,7 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { challengeHeaderStyles } from '../../../style/components/challenges/challenges'
+import { challengeHeaderStyles,challengeTableStyles } from '../../../style/components/challenges/challenges'
 
 
 const techSMES = [
@@ -52,12 +52,13 @@ class ChallengeHeader extends React.Component {
               <Typography className={classes.heading} variant="h4">ERS Open Source Panel</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
-              <span className={classes.expansion}>
+              
+              <div className={classes.expansion}>
                 <Typography variant="body2">
                   Following SMEs are part of the ERS Open Source Panel . <br/>They are core to driving this initiative and have following responsibilities
               </Typography>
                 <Typography variant="body2" component="ul">
-                  <ul>
+                  <ul >
                     <li><Typography>Review TECHNOLOGY Open source submissions for quality when required. SME can take help from others on this</Typography></li>
                     <li><Typography>Identify one quality Challenge/Idea per quarter to be shared on Github</Typography></li>
                     <li><Typography>Implement some of the Challenges/ Ideas</Typography></li>
@@ -91,7 +92,7 @@ class ChallengeHeader extends React.Component {
                 </Paper>
 
 
-              </span>
+              </div>
 
             </ExpansionPanelDetails>
           </ExpansionPanel>

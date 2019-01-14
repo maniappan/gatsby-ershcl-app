@@ -192,22 +192,28 @@ const challengeTableStyles = theme => ({
 
 const challengeHeaderStyles = theme => ({
   expansion: {
-    display: 'flex',
+    display: 'inline-flex',
     flex: '1 1 auto',
     flexDirection: 'column',
     justifyContent: 'center',
+    flexWrap: 'wrap',
+    overflowWrap: 'break-word',
   },
   rootTable: {
     width: '100%',
     marginTop: theme.spacing.unit * 3,
-    overflowX: 'auto',
+    overflowX: 'hidden',
   },
   table: {
-    minWidth: 700,
+//    minWidth: 700,
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
+  },
+  liWrap:{
+    wordBreak: 'break-word',
+    whiteSpace: 'normal',
   },
   paper: {
     display: 'flex',
@@ -238,7 +244,7 @@ const challengeHeaderStyles = theme => ({
   },
   media: {
     height: 0,
-    paddingTop: '18%'
+    paddingTop: '30%'
   },
   container: {
     display: 'flex',
