@@ -24,7 +24,7 @@ const techSMES = [
   { id: 2, technology: 'Web UI', SME:'Tarun Kumar Sukhu'},
   { id: 3, technology: 'Analytics', SME:'Ritesh Sinha'},
   { id: 4, technology: 'Cloud', SME:'Suresh Kosuru'},
-  { id: 5, technology: 'BigData', SME:'TBD'},
+  { id: 5, technology: 'BigData', SME:'Seshadri T'},
 ];
 
 class ChallengeHeader extends React.Component {
