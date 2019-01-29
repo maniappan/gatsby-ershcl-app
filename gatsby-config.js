@@ -23,7 +23,32 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        gfm: true,
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 740,
+            },
+          },
+          'gatsby-remark-copy-linked-files',
+          {
+            resolve: 'gatsby-remark-smartypants',
+            options: {
+              dashes: 'oldschool',
+            },
+          },
+          'gatsby-remark-autolink-headers',
+          'gatsby-remark-prismjs'
+        ],
+      },
+    },
     `gatsby-transformer-excel`,
     {
       resolve: `gatsby-plugin-manifest`,
