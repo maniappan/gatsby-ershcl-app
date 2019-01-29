@@ -103,7 +103,7 @@ class Navigation extends Component {
               <IconButton
                 color="inherit"
                 component={Link}
-                to="/challenges/"
+                to="/ideas/"
                 aria-label="ERS-HCL Ideas"
               >
                 <RateReview />
@@ -196,7 +196,7 @@ class Navigation extends Component {
               <ListItem
                 button
                 component={Link}
-                to="/challenges/"
+                to="/ideas/"
                 onClick={this.handleClose}
                 aria-label="ERS-HCL Ideas"
               >

@@ -50,8 +50,8 @@ const styles = theme => ({
 function getSteps() {
   return [
     'Login / Register',
-    'Add a new Challenge',
-    'Edit existing challenges',
+    'Add a new Idea',
+    'Edit existing idea',
     'Save',
     'Global View'
   ]
