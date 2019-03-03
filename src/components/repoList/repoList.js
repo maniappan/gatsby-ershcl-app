@@ -19,6 +19,7 @@ import GridContainer from '../grid/GridContainer'
 import GridItem from '../grid/GridItem'
 import MyButton from '../CustomButtons/Button'
 import Parallax from '../parallax/Parallax'
+import heroImage from '../../assets/images/home.jpg'
 
 const moment = require('moment-timezone')
 moment.tz.setDefault('UTC')
@@ -230,7 +231,7 @@ class RepoList extends React.Component {
       'ProjectList_' + moment(new Date()).format('DD_MM_YYYY') + '.csv'
     return (
       <div>
-        <Parallax filter image={require('../../assets/images/home.jpg')}>
+        <Parallax filter image={heroImage}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
