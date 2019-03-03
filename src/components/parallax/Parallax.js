@@ -12,14 +12,14 @@ import parallaxStyle from '../../style/components/3rdparty/parallaxStyle'
 class Parallax extends React.Component {
   constructor(props) {
     super(props)
-    var windowScrollTop = window.pageYOffset / 3
+    var windowScrollTop = (typeof window !== "undefined")?window.pageYOffset / 3:0;
     this.state = {
       transform: 'translate3d(0,' + windowScrollTop + 'px,0)'
     }
     this.resetTransform = this.resetTransform.bind(this)
   }
   componentDidMount() {
-    var windowScrollTop = window.pageYOffset / 3
+    var windowScrollTop = (typeof window !== "undefined")?window.pageYOffset / 3:0;
     this.setState({
       transform: 'translate3d(0,' + windowScrollTop + 'px,0)'
     })
@@ -29,7 +29,7 @@ class Parallax extends React.Component {
     window.removeEventListener('scroll', this.resetTransform)
   }
   resetTransform() {
-    var windowScrollTop = window.pageYOffset / 3
+    var windowScrollTop = (typeof window !== "undefined")?window.pageYOffset / 3:0;
     this.setState({
       transform: 'translate3d(0,' + windowScrollTop + 'px,0)'
     })
