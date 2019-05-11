@@ -1,4 +1,5 @@
 import React from "react"
+import MDXRenderer from "gatsby-mdx/mdx-renderer"
 import Card from "@material-ui/core/Card"
 import CardHeader from "@material-ui/core/CardHeader"
 import CardContent from "@material-ui/core/CardContent"
@@ -29,7 +30,7 @@ const styles = theme => ({
 })
 
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const post = data.mdx
   let author = null
   if (post.frontmatter.author) {
     author = <h4>Author: {post.frontmatter.author}</h4>
@@ -40,10 +41,7 @@ export default ({ data }) => {
         <CardHeader title={post.frontmatter.title} subheader={author} />
         <CardContent className={styles.divStyle}>
           <Typography component="div" variant="body1">
-            <div
-              dangerouslySetInnerHTML={{ __html: post.html }}
-              id="___gatsby"
-            />
+          <MDXRenderer>{post.code.body}</MDXRenderer>
           </Typography>
         </CardContent>
       </Card>
@@ -53,8 +51,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(fields: { slug: { eq: $slug } }) {
+      code{
+        body
+      }
       frontmatter {
         title
         author

@@ -4,7 +4,7 @@ const createPaginatedPages = require('gatsby-paginate')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
       node,
@@ -19,7 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        posts: allMarkdownRemark(
+        posts: allMdx(
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
           totalCount

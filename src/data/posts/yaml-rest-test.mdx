@@ -10,7 +10,7 @@ This test framework lets you write your test cases in in simple YAML format. Cur
 
 Read below simple example.
 
-```
+```yaml
 ---
 testGroup:
 - name: Simple test group
@@ -66,7 +66,8 @@ Quickest way to start is to read "src/test/resources/test-1.yaml" test file.
 A test case is a REST API call with HTTP request data to be sent to a server and HTTP response data to be verified by the framework. A test group is a collection of test cases to be executed in a defined sequence.
 
 Basic structure of simple test case is follows:
-```
+
+```yaml
 testGroup: # array of test group.
 - name: # name of a test group
 
@@ -105,7 +106,7 @@ testGroup: # array of test group.
 
 - Examples - Create test groups
 
-```
+```yaml
 testGroup:
   -
      name: first test group
@@ -118,7 +119,7 @@ testGroup:
 
 - Example - Create tests
 
-```
+```yaml
 testGroup:
   -
      ....
@@ -164,7 +165,7 @@ testGroup:
 Variables can be defined inside the initGroup and they have global scope. You can reference these variables like **${variableName}** in the request header, cookies, body and uri values and response header, cookies and assert values. You can also assign values to these variables from response and refer the value in subsequent tests.
 - Example - Define variable :
 
-```
+```yaml
 initGroup:
   variables:
     status: 200 #status variable is created with intial value of 200 
@@ -176,7 +177,7 @@ initGroup:
 
 - Example - Use variables
 
-```
+```yaml
 testGroup:
   -
      name: ....
@@ -195,7 +196,7 @@ testGroup:
 ```
 
   - Example - Assign value to a variable from response.
-```
+```yaml
 testGroup:
   -
      name: ....
@@ -231,4 +232,4 @@ https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html
 
 ## CONTRIBUTOR(S)
 
-Kamran Khan <kamran.khan@hcl.com>
+Kamran Khan

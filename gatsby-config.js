@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `OSS @ERS-HCL`,
@@ -19,57 +19,74 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`
+        name: `data`,
+        path: `${__dirname}/src/data`
       }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: `${__dirname}/src/images`
+      }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-mdx",
+      options: {
+        extensions: [".mdx", ".md"],
+
         gfm: true,
         commonmark: true,
         footnotes: true,
         pedantic: true,
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 740,
-            },
+              maxWidth: 740
+            }
           },
-          'gatsby-remark-copy-linked-files',
           {
-            resolve: 'gatsby-remark-smartypants',
+            resolve: "gatsby-remark-responsive-iframe",
             options: {
-              dashes: 'oldschool',
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
           },
-          'gatsby-remark-autolink-headers',
-          'gatsby-remark-prismjs'
-        ],
-      },
+          { resolve: "gatsby-remark-copy-linked-files" },
+          {
+            resolve: "gatsby-remark-smartypants",
+            options: {
+              dashes: "oldschool"
+            }
+          },
+          { resolve: "gatsby-remark-autolink-headers" },
+          { resolve: "gatsby-remark-prismjs" }
+        ]
+      }
     },
     `gatsby-transformer-excel`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'HCL ERS Static Site',
-        short_name: 'ERS OSS',
-        description: 'ERS Open Source',
-        start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
-        display: 'minimal-ui',
+        name: "HCL ERS Static Site",
+        short_name: "ERS OSS",
+        description: "ERS Open Source",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#a2466c",
+        display: "minimal-ui",
         icons: [
           {
-            src: '/logos/logo-192.png',
-            sizes: '192x192',
-            type: 'image/png'
+            src: "/logos/logo-192.png",
+            sizes: "192x192",
+            type: "image/png"
           },
           {
-            src: '/logos/logo-512.png',
-            sizes: '512x512',
-            type: 'image/png'
+            src: "/logos/logo-512.png",
+            sizes: "512x512",
+            type: "image/png"
           }
         ]
       }
@@ -77,7 +94,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-119197833-1',
+        trackingId: "UA-119197833-1",
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
@@ -302,7 +319,7 @@ module.exports = {
         }        
         `,
         variables: {
-          author: 'ERS-HCL'
+          author: "ERS-HCL"
         }
       }
     }

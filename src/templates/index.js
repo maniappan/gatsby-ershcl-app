@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 export default ({ data, pageContext }) => {
   const content = {
     blogPosts: {
-      totalCount: data.allMarkdownRemark.totalCount,
+      totalCount: data.allMdx.totalCount,
       pageContext: pageContext
     },
     buildTime: data.site.buildTime
@@ -22,7 +22,7 @@ export const query = graphql`
     site {
       buildTime
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
