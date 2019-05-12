@@ -41,7 +41,8 @@ class StackedBarChart extends React.Component {
         width={400}
         domainPadding={{ x: 30, y: 20 }}
         animate={{
-          duration: 50
+          duration: 2000,
+          onLoad: { duration: 1000 }
         }}
       >
         <VictoryLegend

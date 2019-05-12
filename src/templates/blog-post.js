@@ -14,7 +14,7 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 3
   }),
   divStyle: {
-    fontFamily: "Roboto, sans-serif"
+    fontFamily: "Montserrat, sans-serif"
   },
   card: {
     width: "100%",

@@ -11,7 +11,7 @@ import cyan from "@material-ui/core/colors/cyan"
 // A theme with custom primary and secondary color.
 // It's optional.
 const theme = createMuiTheme({
-  fontFamily: "Roboto, sans-serif",
+  fontFamily: "Montserrat, sans-serif",
   display: "flex",
   palette: {
     primary: {

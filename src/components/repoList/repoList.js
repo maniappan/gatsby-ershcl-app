@@ -29,7 +29,7 @@ const title = {
   margin: '1.75rem 0 0.875rem',
   textDecoration: 'none',
   fontWeight: '700',
-  fontFamily: `"Roboto", "Times New Roman", serif`
+  fontFamily: `"Montserrat", "Times New Roman", serif`
 }
 
 const conatinerFluid = {
@@ -70,12 +70,12 @@ const styles = theme => ({
     minHeight: '32px',
     color: '#FFFFFF',
     textDecoration: 'none',
-    fontFamily: `"Roboto", "Times New Roman", serif`
+    fontFamily: `"Montserrat", "Times New Roman", serif`
   },
   subtitle: {
     fontSize: '1rem',
     maxWidth: '500px',
-    fontFamily: `"Roboto", "Times New Roman", serif`
+    fontFamily: `"Montserrat", "Times New Roman", serif`
   },
   main: {
     background: '#FFFFFF',
@@ -292,7 +292,7 @@ class RepoList extends React.Component {
               return {
                 style: {
                   backgroundColor: 'white',
-                  fontFamily: 'Roboto, sans-serif'
+                  fontFamily: 'Montserrat, sans-serif'
                 }
               }
             }}

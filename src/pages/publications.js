@@ -116,7 +116,7 @@ class Publications extends React.Component {
               return {
                 style: {
                   backgroundColor: 'white',
-                  fontFamily: 'Roboto, sans-serif'
+                  fontFamily: 'Montserrat, sans-serif'
                 }
               }
             }}

@@ -25,6 +25,7 @@ const Image = ({ imageName, bypassImage, classes }) => (
       }
     `}
     render={({ placeholderImage }) => {
+      console.log(placeholderImage.edges,imageName)
       const displayImageName = placeholderImage.edges.find(
         ({ node }) => node.name === imageName
       )

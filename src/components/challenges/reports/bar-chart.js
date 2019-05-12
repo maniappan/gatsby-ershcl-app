@@ -26,7 +26,8 @@ class BarChart extends React.Component {
         width={400}
         domainPadding={{ x: 30, y: 20 }}
         animate={{
-          duration: 50
+          duration: 2000,
+          onLoad: { duration: 1000 }
         }}
       >
         <VictoryLabel text={this.props.title} textAnchor="inherit" x={5} y={5} />
