@@ -5,7 +5,7 @@ module.exports = {
     maintainedBy: `Maintained by ERS Technology Office`,
     poweredBy: `GatsbyJS`,
     contributors: `Tarun Sukhu<tsukhu@hcl.com>`,
-    githubProject: `https://github.com/ERS-HCL/gatsby-demo-app`
+    githubProject: `https://github.com/ERS-HCL/gatsby-ershcl-app`
   },
   plugins: [
     `gatsby-plugin-postcss`,

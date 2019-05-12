@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-demo-app",
+  "name": "gatsby-ershcl-app",
   "description": "Gatsby ERS-HCL site generator",
   "license": "MIT",
   "scripts": {
@@ -73,7 +73,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ERS-HCL/gatsby-demo-app.git"
+    "url": "git+https://github.com/ERS-HCL/gatsby-ershcl-app.git"
   },
   "keywords": [
     "gatsby",
@@ -82,7 +82,7 @@
   ],
   "author": "Tarun Sukhu <tksukhu@gmail.com>",
   "bugs": {
-    "url": "https://github.com/ERS-HCL/gatsby-demo-app/issues"
+    "url": "https://github.com/ERS-HCL/gatsby-ershcl-app/issues"
   },
-  "homepage": "https://github.com/ERS-HCL/gatsby-demo-app#readme"
+  "homepage": "https://github.com/ERS-HCL/gatsby-ershcl-app#readme"
 }

@@ -131,7 +131,7 @@ class Navigation extends Component {
             </Tooltip>
             <Tooltip title="Github project">
               <IconButton
-                href="//github.com/ERS-HCL/gatsby-demo-app"
+                href="//github.com/ERS-HCL/gatsby-ershcl-app"
                 target="_blank"
                 rel="noopener"
                 color="inherit"

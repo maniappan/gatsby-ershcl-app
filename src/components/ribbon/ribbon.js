@@ -6,7 +6,7 @@ import styles from './ribbon.module.css';
 const Ribbon = data => (
   <MediaQuery query="(min-width: 1200px)">
     {/* <GitHubForkRibbon
-      href="//github.com/ERS-HCL/gatsby-demo-app"
+      href="//github.com/ERS-HCL/gatsby-ershcl-app"
       target="_blank"
       position="right"
       color="black"
@@ -15,7 +15,7 @@ const Ribbon = data => (
     </GitHubForkRibbon> */}
 
     <a
-      href="//github.com/ERS-HCL/gatsby-demo-app"
+      href="//github.com/ERS-HCL/gatsby-ershcl-app"
       className={styles.githubCorner}
       aria-label="View source on Github"
     >

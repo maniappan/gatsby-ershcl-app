@@ -1,8 +1,8 @@
-# gatsby-demo-app
+# gatsby-ershcl-app
 
-[![Build Status](https://travis-ci.org/ERS-HCL/gatsby-demo-app.svg?branch=master)](https://travis-ci.org/ERS-HCL/gatsby-demo-app)
+[![Build Status](https://travis-ci.org/ERS-HCL/gatsby-ershcl-app.svg?branch=master)](https://travis-ci.org/ERS-HCL/gatsby-ershcl-app)
 [![GitHub version](https://badge.fury.io/gh/ERS-HCL%2Fgatsby-demo-app.svg)](https://badge.fury.io/gh/ERS-HCL%2Fgatsby-demo-app)
-[![Dependency Status](https://david-dm.org/ERS-HCL/gatsby-demo-app.svg)](https://david-dm.org/ERS-HCL/gatsby-demo-app)
+[![Dependency Status](https://david-dm.org/ERS-HCL/gatsby-ershcl-app.svg)](https://david-dm.org/ERS-HCL/gatsby-ershcl-app)
 ---
 
 This is a Gatsby Demo App that will be used to create a static web app to report the github organization , users and project details and statistics.
