@@ -40,6 +40,7 @@ export default ({ data }) => {
   if (post.frontmatter.heroImage) {
     heroImage = (
       <Hero
+        heroImage = {post.frontmatter.heroImage}
         heroHeading={post.frontmatter.heroHeading}
         heroSubHeading={post.frontmatter.heroSubHeading}
         heroStyles={{ color: post.frontmatter.heroTextColor }}

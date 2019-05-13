@@ -2,11 +2,11 @@ import React from "react"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 
-const Hero = ({ classes, heroHeading, heroSubHeading, heroStyles }) => {
+const Hero = ({ classes, heroImage, heroHeading, heroSubHeading, heroStyles }) => {
   return (
     <div className={classes.card}>
       <div className={classes.container} >
-        <img src="/images/showcase2.jpg" className={classes.responsive} />
+        <img src={heroImage} className={classes.responsive} />
         <Typography component="h4" variant="h4" className={classes.topLeft} style={heroStyles}>
           <strong>{heroHeading}</strong>
         </Typography>
@@ -21,7 +21,7 @@ export default withStyles(
   theme => ({
     responsive: {
       width: "100%",
-      maxHeight: 400,
+      maxHeight: 480,
       height: "auto"
     },
     card: {
