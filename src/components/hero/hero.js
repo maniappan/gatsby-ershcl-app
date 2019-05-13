@@ -21,7 +21,7 @@ export default withStyles(
   theme => ({
     responsive: {
       width: "100%",
-      maxHeight: 480,
+      maxHeight: 580,
       height: "auto"
     },
     card: {
