@@ -11,8 +11,6 @@ import cyan from "@material-ui/core/colors/cyan"
 // A theme with custom primary and secondary color.
 // It's optional.
 const theme = createMuiTheme({
-  fontFamily: "Montserrat, sans-serif",
-  display: "flex",
   palette: {
     primary: {
       light: cyan[700],
@@ -35,7 +33,8 @@ const theme = createMuiTheme({
     height: 40
   },
   typography: {
-    useNextVariants: true
+    useNextVariants: true,
+    fontFamily: "Montserrat, sans-serif"
   }
 })
 

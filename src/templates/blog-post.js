@@ -5,6 +5,7 @@ import CardHeader from "@material-ui/core/CardHeader"
 import CardContent from "@material-ui/core/CardContent"
 import Typography from "@material-ui/core/Typography"
 import Layout from "../components/layout"
+import Hero from "../components/hero/hero"
 import { graphql } from "gatsby"
 
 const styles = theme => ({
@@ -32,16 +33,21 @@ const styles = theme => ({
 export default ({ data }) => {
   const post = data.mdx
   let author = null
+  let heroImage = null
   if (post.frontmatter.author) {
     author = <h4>Author: {post.frontmatter.author}</h4>
   }
+  if (post.frontmatter.heroImage) {
+    heroImage = <Hero />
+  }
   return (
     <Layout>
+      {heroImage}
       <Card className={styles.card}>
         <CardHeader title={post.frontmatter.title} subheader={author} />
         <CardContent className={styles.divStyle}>
           <Typography component="div" variant="body1">
-          <MDXRenderer>{post.code.body}</MDXRenderer>
+            <MDXRenderer>{post.code.body}</MDXRenderer>
           </Typography>
         </CardContent>
       </Card>
@@ -52,12 +58,13 @@ export default ({ data }) => {
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
-      code{
+      code {
         body
       }
       frontmatter {
         title
         author
+        heroImage
       }
     }
   }
