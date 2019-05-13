@@ -25,11 +25,9 @@ const Image = ({ imageName, bypassImage, classes }) => (
       }
     `}
     render={({ placeholderImage }) => {
-      console.log(placeholderImage.edges,imageName)
       const displayImageName = placeholderImage.edges.find(
         ({ node }) => node.name === imageName
       )
-      console.log(bypassImage)
       const displayImage = imgName => {
         if (typeof bypassImage === 'undefined' && imgName.node.childImageSharp !== null) {
           return (

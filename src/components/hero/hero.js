@@ -2,19 +2,21 @@ import React from "react"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 
-const Hero = ({ classes }) => (
-  <div className={classes.card}>
-    <div className={classes.container}>
-      <img src="/images/showcase2.jpg" className={classes.responsive} />
-      <Typography component="h4" variant="h4" className={classes.topLeft}>
-        <strong>ERS HCL Open Source</strong>
-      </Typography>
-      <Typography component="h5" variant="h5" className={classes.topLeftTwo}>
-        Projects Showcase
-      </Typography>
+const Hero = ({ classes, heroHeading, heroSubHeading, heroStyles }) => {
+  return (
+    <div className={classes.card}>
+      <div className={classes.container} >
+        <img src="/images/showcase2.jpg" className={classes.responsive} />
+        <Typography component="h4" variant="h4" className={classes.topLeft} style={heroStyles}>
+          <strong>{heroHeading}</strong>
+        </Typography>
+        <Typography component="h5" variant="h5" className={classes.topLeftTwo} style={heroStyles}>
+          {heroSubHeading}
+        </Typography>
+      </div>
     </div>
-  </div>
-)
+  )
+}
 export default withStyles(
   theme => ({
     responsive: {
@@ -34,12 +36,11 @@ export default withStyles(
     container: {
       position: "relative",
       textAlign: "center",
-      color: "black"
     },
     topLeft: {
       position: "absolute",
       top: "8px",
-      left: "16px",
+      left: "16px"
     },
     topLeftTwo: {
       position: "absolute",

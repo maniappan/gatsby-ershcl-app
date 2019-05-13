@@ -38,7 +38,13 @@ export default ({ data }) => {
     author = <h4>Author: {post.frontmatter.author}</h4>
   }
   if (post.frontmatter.heroImage) {
-    heroImage = <Hero />
+    heroImage = (
+      <Hero
+        heroHeading={post.frontmatter.heroHeading}
+        heroSubHeading={post.frontmatter.heroSubHeading}
+        heroStyles={{ color: post.frontmatter.heroTextColor }}
+      />
+    )
   }
   return (
     <Layout>
@@ -65,6 +71,9 @@ export const query = graphql`
         title
         author
         heroImage
+        heroHeading
+        heroSubHeading
+        heroTextColor
       }
     }
   }
