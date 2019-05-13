@@ -261,23 +261,6 @@ class RepoList extends React.Component {
           </div>
         </Parallax>
         <Paper className={classes.paper} elevation={2}>
-          {/* <PageHeader text={pageHeader} /> */}
-          {/*         <Typography variant="caption">
-          <a href="#">Full List</a>
-        </Typography> */}
-          {/*           <Typography variant="button" gutterBottom>
-            <Button
-              variant="extendedFab"
-              color="secondary"
-              aria-label="fulllist"
-              href="https://affectionate-keller-d4f61b.netlify.com/"
-              target="_blank"
-              className={classes.button}
-            >
-              <IconDashboard className={classes.extendedIcon} />
-              Detailed View
-            </Button>
-          </Typography> */}
           <div className={classes.csv}>
             <Tooltip title="Download CSV">
               <CSVLink data={reposdata} filename={csvFileName}>
