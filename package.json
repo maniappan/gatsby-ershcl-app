@@ -41,6 +41,7 @@
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-source-github-api": "0.0.4",
     "gatsby-transformer-excel": "^2.1.11",
+    "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.19",
     "guess-webpack": "^0.1.8",
     "immutable": "^3.8.2",
@@ -66,8 +67,12 @@
     "victory": "^32.2.2"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-react": "^7.13.0",
     "gh-pages": "^2.0.1",
-    "null-loader": "^1.0.0"
+    "null-loader": "^1.0.0",
+    "prettier-eslint": "^8.8.2"
   },
   "version": "3.0.0",
   "main": "n/a",

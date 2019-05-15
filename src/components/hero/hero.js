@@ -2,15 +2,31 @@ import React from "react"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 
-const Hero = ({ classes, heroImage, heroHeading, heroSubHeading, heroStyles }) => {
+const Hero = ({
+  classes,
+  heroImage,
+  heroHeading,
+  heroSubHeading,
+  heroStyles
+}) => {
   return (
     <div className={classes.card}>
-      <div className={classes.container} >
+      <div className={classes.container}>
         <img src={heroImage} className={classes.responsive} />
-        <Typography component="h4" variant="h4" className={classes.topLeft} style={heroStyles}>
+        <Typography
+          component="h4"
+          variant="h4"
+          className={classes.topLeft}
+          style={heroStyles}
+        >
           <strong>{heroHeading}</strong>
         </Typography>
-        <Typography component="h5" variant="h5" className={classes.topLeftTwo} style={heroStyles}>
+        <Typography
+          component="h5"
+          variant="h5"
+          className={classes.topLeftTwo}
+          style={heroStyles}
+        >
           {heroSubHeading}
         </Typography>
       </div>
@@ -35,7 +51,7 @@ export default withStyles(
     },
     container: {
       position: "relative",
-      textAlign: "center",
+      textAlign: "center"
     },
     topLeft: {
       position: "absolute",
