@@ -35,7 +35,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-mdx',
