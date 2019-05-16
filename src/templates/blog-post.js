@@ -1,51 +1,51 @@
-import React from "react"
-import MDXRenderer from "gatsby-mdx/mdx-renderer"
-import Card from "@material-ui/core/Card"
-import CardHeader from "@material-ui/core/CardHeader"
-import CardContent from "@material-ui/core/CardContent"
-import Typography from "@material-ui/core/Typography"
-import Layout from "../components/layout"
-import Hero from "../components/hero/hero"
-import { graphql } from "gatsby"
+import React from 'react';
+import MDXRenderer from 'gatsby-mdx/mdx-renderer';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import Layout from '../components/layout';
+import Hero from '../components/hero/hero';
+import { graphql } from 'gatsby';
 
 const styles = theme => ({
   root: theme.mixins.gutters({
     paddingTop: 16,
     paddingBottom: 16,
-    marginTop: theme.spacing.unit * 3
+    marginTop: theme.spacing.unit * 3,
   }),
   divStyle: {
-    fontFamily: "Montserrat, sans-serif"
+    fontFamily: 'Montserrat, sans-serif',
   },
   card: {
-    width: "100%",
+    width: '100%',
     margin: 5,
-    minHeight: "100vh",
-    alignContent: "center",
-    backgroundColor: "white",
+    minHeight: '100vh',
+    alignContent: 'center',
+    backgroundColor: 'white',
     borderRadius: 5,
     shadowRadius: 5,
-    border: "1px grey",
-    boxShadow: "3px 3px 3px rgba(68,68,68,0.6)"
-  }
-})
+    border: '1px grey',
+    boxShadow: '3px 3px 3px rgba(68,68,68,0.6)',
+  },
+});
 
 export default ({ data }) => {
-  const post = data.mdx
-  let author = null
-  let heroImage = null
+  const post = data.mdx;
+  let author = null;
+  let heroImage = null;
   if (post.frontmatter.author) {
-    author = <h4>Author: {post.frontmatter.author}</h4>
+    author = <h4>Author: {post.frontmatter.author}</h4>;
   }
   if (post.frontmatter.heroImage) {
     heroImage = (
       <Hero
-        heroImage = {post.frontmatter.heroImage}
+        heroImage={post.frontmatter.heroImage}
         heroHeading={post.frontmatter.heroHeading}
         heroSubHeading={post.frontmatter.heroSubHeading}
         heroStyles={{ color: post.frontmatter.heroTextColor }}
       />
-    )
+    );
   }
   return (
     <Layout>
@@ -59,8 +59,8 @@ export default ({ data }) => {
         </CardContent>
       </Card>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
@@ -78,4 +78,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

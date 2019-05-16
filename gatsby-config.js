@@ -72,7 +72,7 @@ module.exports = {
     },
     `gatsby-transformer-excel`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'HCL ERS Static Site',
         short_name: 'ERS OSS',
