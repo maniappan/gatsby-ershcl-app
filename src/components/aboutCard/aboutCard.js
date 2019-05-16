@@ -1,21 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
-import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import CardHeader from '@material-ui/core/CardHeader'
-import Button from '@material-ui/core/Button'
-import Typography from '@material-ui/core/Typography'
-import Paper from '@material-ui/core/Paper'
-import Avatar from '@material-ui/core/Avatar'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardHeader from '@material-ui/core/CardHeader';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
+import Avatar from '@material-ui/core/Avatar';
 
-import blueGrey from '@material-ui/core/colors/blueGrey'
+import blueGrey from '@material-ui/core/colors/blueGrey';
 
 const styles = theme => ({
   card: {
     alignSelf: 'auto',
-    flex:'1 1 auto',
+    flex: '1 1 auto',
     flexDirection: 'column',
     theme: 'inherit',
     margin: 5,
@@ -24,22 +24,22 @@ const styles = theme => ({
     borderRadius: 5,
     shadowRadius: 5,
     border: '1px grey',
-    boxShadow: '3px 3px 3px rgba(68,68,68,0.6)'
+    boxShadow: '3px 3px 3px rgba(68,68,68,0.6)',
   },
   flex: {
-    flex: 1
+    flex: 1,
   },
   button: {
-    margin: theme.spacing.unit
+    margin: theme.spacing.unit,
   },
   leftIcon: {
-    marginRight: theme.spacing.unit
+    marginRight: theme.spacing.unit,
   },
   rightIcon: {
-    marginLeft: theme.spacing.unit
+    marginLeft: theme.spacing.unit,
   },
   iconSmall: {
-    fontSize: 20
+    fontSize: 20,
   },
   paper: {
     margin: 5,
@@ -55,12 +55,12 @@ const styles = theme => ({
     flexWrap: 'wrap',
     rounded: true,
     borderRadius: 5,
-    shadowRadius: 5
-  }
-})
+    shadowRadius: 5,
+  },
+});
 
 const AboutCard = props => {
-  const { classes } = props
+  const { classes } = props;
   return (
     <Paper className={classes.paper} elevation={2}>
       <Card className={classes.card}>
@@ -80,7 +80,7 @@ const AboutCard = props => {
             Powered by: {props.data.poweredBy}
           </Typography>
           <Typography component="p">
-           Contributors: {props.data.contributors}
+            Contributors: {props.data.contributors}
           </Typography>
           <Typography component="p">{props.data.description}</Typography>
         </CardContent>
@@ -89,7 +89,7 @@ const AboutCard = props => {
             href={props.data.githubProject}
             target="_blank"
             size="small"
-            color="primary" 
+            color="primary"
             rel="noopener"
           >
             GITHUB LINK
@@ -97,11 +97,12 @@ const AboutCard = props => {
         </CardActions>
       </Card>
     </Paper>
-  )
-}
+  );
+};
 
 AboutCard.propTypes = {
-  classes: PropTypes.object.isRequired
-}
+  classes: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
+};
 
-export default withStyles(styles, { withTheme: true })(AboutCard)
+export default withStyles(styles, { withTheme: true })(AboutCard);
