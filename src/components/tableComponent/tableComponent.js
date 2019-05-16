@@ -34,7 +34,9 @@ const TableComponent = props => {
   });
 
   const displayHeaderColumns = heading.map((element, index) => (
-    <TableCell align="left" key={index}>{element}</TableCell>
+    <TableCell align="left" key={index}>
+      {element}
+    </TableCell>
   ));
   return (
     <Paper className={classes.root}>
