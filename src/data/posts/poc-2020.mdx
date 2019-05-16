@@ -10,6 +10,31 @@ heroTextColor: darkslategray
 excerpt: PoC 2020 Challenge is open now!
 ---
 
+import TableComponent from '../../components/tableComponent/tableComponent';
+const heading = ['Name(s)', 'PoC Area', 'SME(s)'];
+const data = [
+    {name: 'Jayant,Sumit', area: 'Block Chain', sme: 'Maniappan/Senthil'},
+    {name: 'Madanlal, Dhruv + 1', area: 'Block Chain', sme: 'Maniappan/Senthil'},
+    {name: 'Murugesh Paneerdurai', area: 'Block Chain', sme: 'Maniappan/Senthil'},
+    {name: 'Bala Vijay and Aravind', area: 'GPU Computing', sme: 'Senthil'},
+    {name: 'Tarun Kukreja', area: 'Machine Learning', sme: 'Kinnar/Ritesh'},
+    {name: 'Bishnu', area: 'Micro Services', sme: 'Maniappan/Tarun'},
+    {name: 'Amit Kumar Goyal', area: 'Micro Services', sme: 'Maniappan/Tarun'},
+    {name: 'Manikandan S', area: 'Micro Services', sme: 'Maniappan/Tarun'},
+    {name: 'Begin Samuel', area: 'Micro Services or Serverless Computing', sme: 'Maniappan/Tarun'},
+    {name: 'Pankaj Singh', area: 'MLDL', sme: 'Kinnar/Ritesh'},
+    {name: 'Apoorva Kanchan', area: 'MLDL', sme: 'Kinnar/Ritesh'},
+    {name: 'Daljeet', area: 'MLDL', sme: 'Kinnar'},
+    {name: 'Seshumani', area: 'Node JS (Full Stack)', sme: 'Tarun'}, 
+    {name: 'Madanlal, Dhruv + 1', area: 'React', sme: 'Tarun'}, 
+    {name: 'Nitin Jain', area: 'React', sme: 'Tarun'}, 
+    {name: 'Suresh K', area: 'Serverless computing', sme: 'Maniappan/Tarun'},
+    {name: 'Nilay Tiwari', area: 'Serverless computing', sme: 'Maniappan/Tarun'},
+    {name: 'P Praveen', area: 'Serverless computing', sme: 'Maniappan/Tarun'},
+    {name: 'Shrwan Kumar', area: 'Serverless computing or Voice Apps', sme: 'Senthil'},
+    {name: 'Kuldeep Singh', area: 'Voice Apps - Quiz framework', sme: 'Senthil/Kinnar'} 
+]
+
 ---
 ## Introduction
 
@@ -104,5 +129,7 @@ The list of PoCs from which you can choose are:
 -   The projects comply with ES6 coding standards
 -   The language choices open - JavaScript or Typescript based implementations
 
+### Project Teams
 
+<TableComponent heading={heading} data={data}/>
 
