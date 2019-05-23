@@ -11,6 +11,7 @@ excerpt: PoC 2020 Challenge is open now!
 ---
 
 import TableComponent from '../../components/tableComponent/tableComponent';
+import Image from "../../components/image/image";
 const heading = ['Name(s)', 'PoC Area', 'SME(s)'];
 const data = [
     {name: 'Jayant,Sumit', area: 'Block Chain', sme: 'Maniappan/Senthil'},
@@ -120,6 +121,38 @@ The list of PoCs from which you can choose are:
 
 -   Build Component using Weibull Analysis for estimating Remaining Useful Life of an asset.
 -   Creating reusable solution from a TKT auto assignation system end to end pipeline for deploying a ML/DL model including model scores etc
+-   The ML/DL projects can be in any one of the following areas (but not limited to)
+    -   End to end pipeline for deploying a ML/DL model in production including model scores.
+        -   **Objectives**
+            -   Develop AIOps capability and use cases.
+                1)	Data Preparation and Model Training
+                2)	ML/DL models when deployed in production often decay over time how to maintain quality of model
+                3)	Implement optimized I/O pipeline of ML/DL
+                4)	Develop seamless REST API on top of model which would not be affected when the live model is changed in Realtime.
+                5)	The system should be horizontally scalable and would not slow down inference rate when the load increases. 
+                6)	Monitor predictions 
+                7)	Secure model
+        -   **Justification** 
+            -   AI is about 10% modelling and 90% engineering. Not every AI concept result in a successful product, nor every model deployed in production is successful too. A pipeline helps in experimentation and in seamless deployment of a model with greater ROI.
+        -   **Suggested Implementation** 
+            -   Need to break down the components into parts. TFX is a very good start https://www.tensorflow.org/tfx we need to extend from here as required. 
+        -   **Rationale** 
+            -   Customers are already asking us these questions. We can offer to enhance their existing Big Data platform with this implementation. The nuances of deployment of ML/DL models in production needs to be understood and this would give us this opportunity. Given the heterogenous environments where the models are deployed cloud/edge/on-premise it’s important we get a complete understanding of the complexities involved. 
+            -   Ref : https://eng.uber.com/michelangelo/ 
+    -   Develop a speech-based application to explore data, create reports and charts etc.
+        -   **Objectives**  
+            -   Develop an Augmented Analytics Application which would respond to speech commands and 
+                -	search /explore data
+                -	create reports/charts
+                -	develop insights 
+                -	learn 
+        -   **Justification** 
+            -   Mozilla Deep Learning is one the most advanced and easy to use speech recognition library. We can integrate this with simple python APIs to build a knowledgebase using Neo4j etc. MYSQL code constructs can be generated using rule-based approach using the knowledge base etc.        Metadata about the data can be mined into the knowledgebase using tools like https://neo4j-contrib.github.io/neo4j-apoc-procedures/#_load_jdbc 
+        -   **Suggested Implementation** 
+            <Image imageName="ml-dl-speech-app" bypassImage/>
+        -   **Rationale** 
+            -   Augmented Analytics Is the Future of Data and Analytics. Augmented analytics, an approach that automates insights using machine learning and natural-language generation, marks the next wave of disruption in the data and analytics market.
+            -   https://www.gartner.com/en/conferences/apac/data-analytics-australia/why-attend/event-resources/research-augmented-analytics
 
 
 ### Voice Apps
